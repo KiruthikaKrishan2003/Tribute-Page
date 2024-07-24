@@ -1,0 +1,93 @@
+body {
+    background-image: url("l.jpg");
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed; /* Changed to fixed to cover the viewport */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5); /* Adjust the opacity here */
+    z-index: -1;
+}
+
+img {
+    opacity: 1.0;
+}
+
+header {
+    background-color: #0a0303;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+.Intro {
+    background-image: linear-gradient(to bottom, #f7f7f7, #fff);
+    padding: 5em;
+    text-align: center;
+}
+
+.Intro img {
+    width: 25%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.Intro blockquote {
+    font-size: 1.5em;
+    font-style: italic;
+    color: #0b0303;
+    padding: 1em;
+    border-left: 5px solid #ccc;
+}
+
+.About, .Qualities, .Quotes, .MajorContributions {
+    padding: 1.5em;
+}
+
+.Qualities h2, .Quotes h2, .MajorContributions h2 {
+    color: #100c0ceb;
+    margin-top: 0;
+}
+
+.Qualities ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 1em;
+    margin-inline-end: 1em;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.Qualities li {
+    padding: 1.5em;
+    border-bottom: 1px solid #ccc;
+}
+
+.Qualities li:last-child {
+    border-bottom: none;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
